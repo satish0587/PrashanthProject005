@@ -12,9 +12,9 @@
       margin: 0;
       outline: none;
       font-family: Roboto, Arial, sans-serif;
-      font-size: 40px;
+      font-size: 50px;
       color: #012;
-      line-height: 29px;
+      line-height: 20px;
       }
       h1 {
       position: absolute;
