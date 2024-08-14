@@ -4,14 +4,14 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <style>
       html, body {
-      min-height: 100%;
+      min-height: 50%;
       }
      <!-- commemt -->
       body, div, form, input, select, p {
       padding: 0;
       margin: 0;
       outline: none;
-      font-family: Roboto, Arial, sans-serif;
+      font-family: Roboto, Verdana, sans-serif;
       font-size: 30px;
       color: #012;
       line-height: 20px;
@@ -20,11 +20,11 @@
       position: absolute;
       margin: 0;
       font-size: 200px;
-      color: #000;
+      color: #001;
       z-index: 2;
       }
       p.top-info {
-      margin: 10px 0;
+      margin: 5px 0;
       }
       .testbox {
       display: flex;
@@ -42,7 +42,7 @@
       }
      .banner {
       position: relative;
-      height: 400px;
+      height: 100px;
       background-image: url("/uploads/media/default/0001/02/fb57ab781c34da322c884532bfec751e843e36fc.jpeg");
       background-size: cover;
       display: flex;
