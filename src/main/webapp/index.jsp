@@ -12,7 +12,7 @@
       margin: 0;
       outline: none;
       font-family: Roboto, Verdana, sans-serif;
-      font-size: 50px;
+      font-size: 60px;
       color: #000;
       line-height: 50px;
       }
