@@ -12,15 +12,15 @@
       margin: 0;
       outline: none;
       font-family: Roboto, Verdana, sans-serif;
-      font-size: 50px;
+      font-size: 30px;
       color: #000;
-      line-height: 60px;
+      line-height: 40px;
       }
       h1 {
       position: absolute;
       margin: 0;
-      font-size: 200px;
-      color: #001;
+      font-size: 100px;
+      color: #002;
       z-index: 2;
       }
       p.top-info {
