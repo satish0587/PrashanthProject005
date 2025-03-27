@@ -11,7 +11,7 @@
       padding: 0;
       margin: 0;
       outline: none;
-      font-family: Roboto, Verdana, sans-serif;
+      font-family: Roboto, Calibri, sans-serif;
       font-size: 40px;
       color: #001;
       line-height: 20px;
