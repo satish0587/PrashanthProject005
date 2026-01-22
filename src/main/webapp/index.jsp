@@ -12,14 +12,14 @@
       margin: 0;
       outline: none;
       font-family: Roboto, Calibri, sans-serif;
-      font-size: 40px;
+      font-size: 30px;
       color: #001;
       line-height: 20px;
       }
       h1 {
       position: absolute;
       margin: 0;
-      font-size: 80px;
+      font-size: 60px;
       color: #001;
       z-index: 2;
       }
@@ -42,7 +42,7 @@
       }
      .banner {
       position: relative;
-      height: 100px;
+      height: 50px;
       background-image: url("/uploads/media/default/0001/02/fb57ab781c34da322c884532bfec751e843e36fc.jpeg");
       background-size: cover;
       display: flex;
@@ -52,7 +52,7 @@
       }
       .banner::after {
       content: "";
-      background-color: Blue;
+      background-color: Yellow;
       position: absolute;
       width: 100%;
       height: 100%;
