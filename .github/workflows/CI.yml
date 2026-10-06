@@ -3,7 +3,7 @@ name: Java CI
 on:
     push:
       branches:
-        - main
+        - '!main'
 
 jobs:
   built:
@@ -21,4 +21,7 @@ jobs:
 
       - name: Setup-Maven build
         run: mvn clean package --file pom.xml
+
+      - name: Build Docker image
+        run: docker run -t mydevops-app .
      
