@@ -1,30 +1,33 @@
 name: Java CI
 
 on:
-    push:
-      branches:
-        - 'main'
+  push:
+    branches:
+      - 'main'
 
 jobs:
   built:
     runs-on: ubuntu-latest
-    
+
     steps:
-      - name: checkout code
+      - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup-Java
+      - name: Setup Java
         uses: actions/setup-java@v6.0.1
         with:
           distribution: temurin
           java-version: '17'
 
       - name: Build with Maven
-        run: mvn -B package --file pom.xml
+        run: mvn -B clean package --file pom.xml
+
+      - name: Check Maven Output
+        run: |
+          pwd
+          ls -al
+          ls -al target
+          find . -name "*.war" -type f
 
       - name: Build Docker Image
-        run: |
-            cd src
-            docker build -t devopswebapp .
-
-     
+        run: docker build -t devopswebapp:1.0 .
