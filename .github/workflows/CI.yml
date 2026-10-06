@@ -19,9 +19,7 @@ jobs:
           distribution: temurin
           java-version: '17'
 
-      - name: Setup-Maven build
-        run: mvn clean package --file pom.xml
+      - name: Build Docker Image
+        run: docker build -t mydevops-app .
 
-      - name: Build Docker image
-        run: docker run -t mydevops-app .
      
