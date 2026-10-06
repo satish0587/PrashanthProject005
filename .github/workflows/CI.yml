@@ -20,6 +20,8 @@ jobs:
           java-version: '17'
 
       - name: Build Docker Image
-        run: docker build -t mydevops-app .
+        run: |
+          - pwd
+          - ls -al
 
      
