@@ -3,7 +3,7 @@ name: Java CI
 on:
   push:
     branches:
-      - '!main'
+      - 'main'
 
 jobs:
   built:
@@ -21,13 +21,6 @@ jobs:
 
       - name: Build with Maven
         run: mvn -B clean package --file pom.xml
-
-      - name: Check Maven Output
-        run: |
-          pwd
-          ls -al
-          ls -al target
-          find . -name "*.war" -type f
 
       - name: Build Docker Image
         run: docker build -t devopswebapp:1.0 -f src/Dockerfile .
