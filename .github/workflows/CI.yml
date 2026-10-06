@@ -30,9 +30,4 @@ jobs:
           find . -name "*.war" -type f
 
       - name: Build Docker Image
-        run: docker build -t devopswebapp:1.0 .
-
-      - name: Build Docker Image 
-        run: | 
-          cd src 
-          docker build -t devopswebapp .
+        run: docker build -t devopswebapp:1.0 -f src/Dockerfile .
