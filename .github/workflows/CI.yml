@@ -1,0 +1,21 @@
+name: Java CI
+
+on:
+    push:
+      branches:
+        - main
+
+jobs:
+  built:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup-Java
+        uses: actions/setup-java@v6.0.1
+
+      - name: Setup-Maven build
+        run: mvn clean package --file pom.xml
+     
