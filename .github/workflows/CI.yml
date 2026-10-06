@@ -15,6 +15,9 @@ jobs:
 
       - name: Setup-Java
         uses: actions/setup-java@v6.0.1
+        with:
+          distribution: temurin
+          java-version: '17'
 
       - name: Setup-Maven build
         run: mvn clean package --file pom.xml
