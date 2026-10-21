@@ -36,4 +36,4 @@ jobs:
         run: docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/devopswebapp:1.0 -f src/Dockerfile .
 
       - name: Push Docker Image
-        run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/devopswebapp:1.0
+        run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/devopswebapp:2.0
