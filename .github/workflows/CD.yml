@@ -15,7 +15,7 @@ jobs:
     steps:
       - name: Pull Docker Image
         run: |
-          docker pull ${{ secrets.DOCKERHUB_USERNAME }}/devopswebapp:2.0
+          docker pull ${{ secrets.DOCKERHUB_USERNAME }}/devopswebapp:latest
 
       - name: Stop Existing Container
         run: |
@@ -27,7 +27,7 @@ jobs:
           docker run -d \
             --name devopswebapp \
             -p 8081:8080 \
-            ${{ secrets.DOCKERHUB_USERNAME }}/devopswebapp:2.0
+            ${{ secrets.DOCKERHUB_USERNAME }}/devopswebapp:latest
 
       - name: Check Container
         run: |
